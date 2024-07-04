@@ -1,54 +1,40 @@
-# Bytecode do Java
-*.class
-
-# Arquivos log
-*.log
-
-# Diretório Maven
+HELP.md
 target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 
-# Diretórios Gradle
-.gradle/
-build/
-
-# Arquivos de configuração do Maven
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-
-# Arquivos do Eclipse
+### STS ###
+.apt_generated
 .classpath
+.factorypath
 .project
-.settings/
+.settings
+.springBeans
+.sts4-cache
 
-# Arquivos do IntelliJ IDEA
-*.iml
-.idea/
-*.ipr
+### IntelliJ IDEA ###
+.idea
 *.iws
-out/
+*.iml
+*.ipr
 
-# Arquivos gerados pelo sistema operacional
-.DS_Store
-Thumbs.db
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# Arquivos temporários
-*.tmp
-*.swp
-*.swo
+### VS Code ###
+.vscode/
 
-# Arquivos de backup
-*~
-# Arquivos de lock do sistema operacional
-*.lock
+### Environments ###
+.env
 
-# Configurações específicas do sistema
-*.env
-
-# Diretório H2
-*.db
-*.mv.db
-*.trace.db
+### secrets ###
+shhkey-time05.pem
+little-runs.txt
