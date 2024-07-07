@@ -21,4 +21,8 @@ public class ProjectService {
     public Project createProject(Project project){
         return projectRepository.save(project);
     }
+
+    public void deleteProject(String projectId){
+        projectRepository.deleteById(projectId);
+    }
 }
