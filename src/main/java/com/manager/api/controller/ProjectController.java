@@ -29,4 +29,9 @@ public class ProjectController {
     public void deleteProject(@PathVariable String projectId){
         projectService.deleteProject(projectId);
     }
+
+    @PutMapping("/{projectId}")
+    public Project updateProject(@PathVariable String projectId, @RequestBody Project project){
+        return projectService.updateProject(projectId, project);
+    }
 }
