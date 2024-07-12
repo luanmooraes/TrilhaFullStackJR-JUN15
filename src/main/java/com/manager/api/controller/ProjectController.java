@@ -20,6 +20,11 @@ public class ProjectController {
         return projectService.getAllProjects();
     }
 
+    @GetMapping("/{projectId}")
+    public Project getProjectById(@PathVariable String projectId){
+        return projectService.getProjectById(projectId);
+    }
+
     @PostMapping
     public Project createProject(@RequestBody Project project){
         return projectService.createProject(project);
