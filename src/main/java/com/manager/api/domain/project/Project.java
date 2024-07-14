@@ -19,4 +19,11 @@ public class Project {
     private String title;
     private String description;
     private LocalDate startDate;
+
+    // Constructor para fazer uso do DTO
+    public Project(RequestProjectDTO requestProjectDTO){
+        this.title = requestProjectDTO.title();
+        this.description = requestProjectDTO.description();
+        this.startDate = requestProjectDTO.startDate();
+    }
 }
