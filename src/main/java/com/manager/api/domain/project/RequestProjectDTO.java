@@ -10,7 +10,7 @@ public record RequestProjectDTO(
         String title,
         @NotBlank(message = "Description is required")
         String description,
-        @NotNull(message = "StartDate is required")
-        LocalDate startDate
+        @NotNull(message = "CreatedAt is required")
+        LocalDate createdAt
 ) {
 }
